@@ -26,14 +26,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
 .timeline::after{
     content: "";
     position: absolute;

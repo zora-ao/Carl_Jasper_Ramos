@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carl Jasper Ramos</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container" class="md:grid relative md:grid-cols-[300px_1fr] justify-evenly gap-x-10 flex-col md:px-10 px-4 py-4 text-white items-center md:h-screen">
@@ -56,7 +55,7 @@
                     <li class="nav-btn"><a href="#home"><i class="fa-solid fa-house"></i></a></li>
                     <li class="nav-btn"><a href="#about"><i class="fa-solid fa-user"></i></a></li>
                     <li class="nav-btn"><a href="#projects"><i class="fa-solid fa-laptop-code"></i></a></li>
-                    <li class="nav-btn"><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                    <li class="nav-btn"><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
                 <!--Certificates container-->
                 <div class="my-4">
@@ -94,8 +93,8 @@
                         </div>
                     </div>
 
-                    <div class="container md:w-1/2 w-full md:px-12 pl-4 mx-4 py-0 rounded-xl relative my-10 ml-auto relative">
-                        <img class="w-[30px] h-[30px] absolute md:-left-[1px] -left-[37px] top-8 z-30" src="./icons/JavaScript.png" alt="">
+                    <div class="container md:w-1/2 w-full md:px-12 pl-4 mx-4 py-0 rounded-xl relative my-10 mr-auto md:mr-0 md:ml-auto relative">
+                        <img class="w-[30px] h-[30px] absolute md:-left-[14px] -left-[37px] top-8 z-30" src="./icons/JavaScript.png" alt="">
                         <div class="text-content rounded-lg  relative bg-white text-black p-5">
                             <h1 class="font-bold font-[Unbounded]">Responsive webdesign</h1>
                             <small>2024 - 2025</small>
@@ -119,12 +118,130 @@
             </section>
 
             <!--Project Section-->
-            <section id="projects" class="h-screen">
+            <section id="projects" class="h-full p-6">
+                <h1 class="text-2xl font-[Oswald] font-bold">My Projects</h1>
+                <p>Here are some of my personal projects.</p>
+                <!--Display project-->
+                <div class="flex justify-evenly flex-wrap gap-5 py-10">    
+                    <div class="w-[300px] h-[350px] pb-3 flex flex-col justify-between  border">
+                        <div>
+                            <img class="" src="cake.png" alt="">
+                        </div>
+                        <div class="flex-grow p-3">
+                            <h1 class="font-bold text-xl">Cake Shop Website</h1>
+                            <p>This is a cake shop that I made for this porfolio website</p>
+                        </div>
+                        <div class="flex justify-around items-center">
+                            <ul class="flex justify-evenly gap-x-4">
+                                <li><img class="w-[30px] h-[30px]" src="icons/html.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/css.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/JavaScript.png" alt=""></li>
+                            </ul>
+                            <button><i class="fa-solid fa-code"></i></button>
+                            <button><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
 
+                    <div class="w-[300px] h-[350px] pb-3 flex flex-col justify-between  border">
+                        <div>
+                            <img class="" src="cake.png" alt="">
+                        </div>
+                        <div class="flex-grow p-3">
+                            <h1 class="font-bold text-xl">Cake Shop Website</h1>
+                            <p>This is a cake shop that I made for this porfolio website</p>
+                        </div>
+                        <div class="flex justify-around items-center">
+                            <ul class="flex justify-evenly gap-x-4">
+                                <li><img class="w-[30px] h-[30px]" src="icons/html.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/css.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/JavaScript.png" alt=""></li>
+                            </ul>
+                            <button><i class="fa-solid fa-code"></i></button>
+                            <button><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="w-[300px] h-[350px] pb-3 flex flex-col justify-between  border">
+                        <div>
+                            <img class="" src="cake.png" alt="">
+                        </div>
+                        <div class="flex-grow p-3">
+                            <h1 class="font-bold text-xl">Cake Shop Website</h1>
+                            <p>This is a cake shop that I made for this porfolio website</p>
+                        </div>
+                        <div class="flex justify-around items-center">
+                            <ul class="flex justify-evenly gap-x-4">
+                                <li><img class="w-[30px] h-[30px]" src="icons/html.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/css.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/JavaScript.png" alt=""></li>
+                            </ul>
+                            <button><i class="fa-solid fa-code"></i></button>
+                            <button><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="w-[300px] h-[350px] pb-3 flex flex-col justify-between  border">
+                        <div>
+                            <img class="" src="cake.png" alt="">
+                        </div>
+                        <div class="flex-grow p-3">
+                            <h1 class="font-bold text-xl">Cake Shop Website</h1>
+                            <p>This is a cake shop that I made for this porfolio website</p>
+                        </div>
+                        <div class="flex justify-around items-center">
+                            <ul class="flex justify-evenly gap-x-4">
+                                <li><img class="w-[30px] h-[30px]" src="icons/html.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/css.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/JavaScript.png" alt=""></li>
+                            </ul>
+                            <button><i class="fa-solid fa-code"></i></button>
+                            <button><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="w-[300px] h-[350px] pb-3 flex flex-col justify-between  border">
+                        <div>
+                            <img class="" src="cake.png" alt="">
+                        </div>
+                        <div class="flex-grow p-3">
+                            <h1 class="font-bold text-xl">Cake Shop Website</h1>
+                            <p>This is a cake shop that I made for this porfolio website</p>
+                        </div>
+                        <div class="flex justify-around items-center">
+                            <ul class="flex justify-evenly gap-x-4">
+                                <li><img class="w-[30px] h-[30px]" src="icons/html.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/css.png" alt=""></li>
+                                <li><img class="w-[30px] h-[30px]" src="icons/JavaScript.png" alt=""></li>
+                            </ul>
+                            <button><i class="fa-solid fa-code"></i></button>
+                            <button><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contact Section-->
+            <section id="contact" class="h-full py-12">
+                <div class="p-4">
+                    <h1 class="text-2xl font-bold font-[Oswald]">Contact</h1>
+                    <p>Let's make things work!</p>
+
+                    <form action="" class="grid gap-5 rounded-xl border p-5 grid-cols-[1fr_1fr] md:w-1/2 w-full mx-auto ">
+                        <input class="rounded-full px-3 py-2 w-full" type="text" placeholder="First name">
+                        <input class="rounded-full px-3 py-2 w-full" type="text" placeholder="Last name">
+                        <input class="col-span-2 rounded-full px-3 py-2 w-full" type="email" placeholder="Your email">
+                        <textarea class="col-span-2 rounded px-3 py-2 w-full" rows="8" placeholder="Your message"></textarea>
+
+                        <button class="px-5 col-span-2 py-2 border rounded-xl flex mx-auto w-full justify-center">Send</button>
+                    </form>
+                </div>
             </section>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
