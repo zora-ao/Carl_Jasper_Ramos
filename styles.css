@@ -18,9 +18,26 @@ body{
     scrollbar-width: none;
 }
 
+
+.nav-btn:hover{
+    transform: translateY(-2px) scale(1.2);
+    transition: ease-in-out 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
 .timeline::after{
     content: "";
     position: absolute;
+    border-radius: 10px;
     width: 6px;
     height: 100%;
     top: 0;
@@ -28,7 +45,7 @@ body{
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards;
+    animation: moveline 4s linear forwards;
 }
 
 @keyframes moveline{
@@ -42,15 +59,33 @@ body{
 
 .container{
     animation: movedown 1s linear forwards;
+    visibility: hidden;
 }
 
 @keyframes movedown {
     0%{
-        opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
     100%{
-        opcaity: 1;
         transform: translateY(0px);
+        visibility: visible;
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0.5s;
+}
+
+.container:nth-child(2){
+    animation-delay: 1.5s;
+}
+
+.container:nth-child(3){
+    animation-delay: 3s;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after{
+        left: 10px;
     }
 }
