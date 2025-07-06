@@ -19,8 +19,8 @@ certificateBtn.forEach((btn, index) => {
             displayCertificate.setAttribute('src', certificatesImg[index].src);
             displayCertificate.classList.remove('opacity-0');
             certificateImg.classList.toggle('hidden');
-            certificateLink.setAttribute(href, certificatesImg[index].link)
-        }, 500)  
+            certificateLink.setAttribute("href", certificatesImg[index].link)
+        }, 200)  
     })
 });
 
@@ -30,6 +30,15 @@ closeCertificate.addEventListener('click', () => {
 
 
 
+const moreInfo = document.getElementById("more-info");
+const showMoreBtn = document.getElementById("show-more");
+let isMore = false;
+
+showMoreBtn.addEventListener('click', () => {
+    moreInfo.classList.toggle('hidden');
+    isMore = !isMore;
+    showMoreBtn.innerHTML = isMore ? `<i class="fa-solid fa-square-caret-up"></i>` : `<i class="fa-solid fa-square-caret-down"></i>`;
+})
 
 
 
