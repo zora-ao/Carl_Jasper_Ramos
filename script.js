@@ -15,7 +15,31 @@ certificateBtn.forEach((btn, index) => {
         setTimeout(() => {
             displayCertificate.setAttribute('src', certificatesImg[index].src);
             displayCertificate.classList.remove('opacity-0');
-        }, 500)
-        
+        }, 500)  
+    })
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            if(
+                entry.target.classList.contains('hide')
+            ){
+                entry.target.classList.remove('hide')
+                entry.target.classList.add('show')
+                
+            }
+
+            if(entry.target.classList.contains('timeline')){
+                entry.target.classList.add('animate')
+            }
+        } else {
+            entry.target.classList.remove('show')
+            entry.target.classList.remove('animate')
+            entry.target.classList.add('hide')
+        }
     })
 })
+
+const element = document.querySelectorAll('.timeline, .hide');
+element.forEach((el) => observer.observe(el));
