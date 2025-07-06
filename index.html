@@ -14,7 +14,7 @@
     <div id="container" class="md:grid relative md:grid-cols-[300px_1fr] justify-evenly gap-x-10 flex-col md:px-10 px-4 py-4 text-white items-center md:h-screen">
         <!--Profile-->
         <div class="relative sticky top-0 z-50 bg-black font-[Unbounded]">
-            <section class="md:w-[300px] md:fixed top-20 px-5 ease-in-out duration-500 py-2 border border-white rounded-md">
+            <section class="md:w-[300px] md:fixed top-10 px-5 ease-in-out duration-500 py-2 border border-white rounded-md">
                 <h1 class="">Carl Jasper Ramos</h1>
                 <div class="flex md:flex hidden justify-around items-center my-2">
                     <img class="md:w-[180px] md:h-[190px] w-[100px] border rounded" src="profile.png" alt="profile-picture">
@@ -27,24 +27,15 @@
                 </div>
                 <h1 class="font-bold text-2xl font-[Oswald]">ASPIRING WEB DEVELOPER</h1>
                 <h2 class="my-2 text-sm md:block hidden">Tech Stack:</h2>
-                <ul class="flex md:flex hidden justify-evenly my-4">
-                    <li>
-                        <img class="w-[30px]" src="./icons/html.png" alt="">
-                    </li>
-                    <li>
-                        <img class="w-[30px]" src="./icons/css.png" alt="">
-                    </li>
-                    <li>
-                        <img class="w-[30px]" src="./icons/JavaScript.png" alt="">
-                    </li>
-                    <li>
-                        <img class="w-[30px]" src="./icons/tailwind_css.png" alt="">
-                    </li>
-                    <li>
-                        <img class="w-[30px]" src="./icons/React.png" alt="">
-                    </li>
-                </ul>
-
+                <div class="w-full overflow-hidden">
+                    <div class="flex md:flex hidden hover:bg-gray-500 ease duration-500 justify-evenly my-4 border px-3 py-2 rounded-xl">
+                        <img class="w-[30px] hover:-translate-y-2 ease duration-300" src="./icons/html.png" alt="">
+                        <img class="w-[30px] hover:-translate-y-2 ease duration-300" src="./icons/css.png" alt="">
+                        <img class="w-[30px] hover:-translate-y-2 ease duration-300" src="./icons/tailwind_css.png" alt="">
+                        <img class="w-[30px] hover:-translate-y-2 ease duration-300" src="./icons/JavaScript.png" alt="">
+                        <img class="w-[30px] hover:-translate-y-2 ease duration-300" src="./icons/React.png" alt="">
+                    </div>
+                </div>
                 <button class="border px-3 py-2 md:flex hidden mx-auto my-2 rounded w-1/2 justify-center text-sm">Let's talk</button>
             </section>
         </div>
@@ -58,17 +49,21 @@
                     <li class="nav-btn"><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
                 <!--Certificates container-->
-                <div class="hide my-4">
+                <div id="certificate-img" class="hide md:block hidden my-4 md:relative fixed md:top-0 top-24 md:p-0 px-2 pt-8 rounded z-50 text-center md:border-none border md:bg-black md:text-white bg-white text-black">
+                    <button id="close-certificate" class="md:hidden absolute top-2 right-2 font-bold">X</button>
+                    <a id="certificate-link" class="" href="https://www.freecodecamp.org/certification/ao_zora/responsive-web-design">
                     <img id="display-certificate" class="md:h-[350px] h-[250px]" src="certificates/javascript.png" alt="javascript">
+                    View Certificate
+                    </a>
                 </div>
-                <div class="w-full overflow-hidden px-4">
+                <div class="w-full px-4">
                     <h1 class="font-bold text-2xl font-[Oswald]">My Certificates</h1>
-                    <ul id="certificates-container" class="flex md:flex-row flex-col items-center overflow-x-auto gap-4 p-2 justify-center gap-x-6">
-                        <button class="certificate-btn hover:bg-white hover:text-black ease duration-300 border px-3 py-2 rounded">Responsive Web Design</button>
+                    <ul id="certificates-container" class="flex text-sm md:flex-row flex-col overflow-x-auto gap-4 p-2 justify-center gap-x-6">
+                        <button class="certificate-btn w-full hover:bg-white hover:text-black ease duration-300 border px-3 py-2 rounded">Responsive Web Design</button>
 
-                        <button class="certificate-btn hover:bg-white hover:text-black ease duration-300 border px-3 py-2 rounded">Javascript Data Structure and Algorithm</button>
+                        <button class="certificate-btn w-full hover:bg-white hover:text-black ease duration-300 border px-3 py-2 rounded">Javascript Data Structure and Algorithm</button>
 
-                        <button class="certificate-btn hover:bg-white hover:text-black ease duration-300 border px-3 py-2 rounded">Front End Development Libraries</button>
+                        <button class="certificate-btn w-full hover:bg-white hover:text-black ease duration-300 border px-3 py-2 rounded">Front End Development Libraries</button>
                     </ul>
                 </div>
             </section>
@@ -113,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="container md:w-1/2 w-full md:px-12 pl-4 mx-4 py-0 rounded-xl relative my-10 mr-auto md:mr-0 md:ml-auto relative">
+                    <div class="container hide md:w-1/2 w-full md:px-12 pl-4 mx-4 py-0 rounded-xl relative my-10 mr-auto md:mr-0 md:ml-auto relative">
                         <img class="w-[30px] h-[30px] absolute md:-left-[14px] -left-[37px] top-8 z-30" src="./icons/JavaScript.png" alt="">
                         <div class="text-content rounded-lg  relative bg-white text-black p-5">
                             <h1 class="font-bold font-[Unbounded]">CS50 - 2025</h1>
@@ -132,7 +127,7 @@
                 <h1 class="text-2xl font-[Oswald] font-bold">My Projects</h1>
                 <p>Here are some of my personal projects.</p>
                 <!--Display project-->
-                <div class="flex justify-evenly flex-wrap gap-5 py-10">    
+                <div class="flex hide justify-evenly flex-wrap gap-5 py-10">    
                     <div class="w-[300px] h-[350px] pb-3 flex flex-col justify-between  border">
                         <div>
                             <img class="" src="cake.png" alt="">
@@ -178,19 +173,34 @@
             </section>
 
             <!--Contact Section-->
-            <section id="contact" class="h-full py-12">
-                <div class="p-4">
-                    <h1 class="text-2xl font-bold font-[Oswald]">Contact</h1>
-                    <p>Let's make things work!</p>
-
-                    <form action="" class="grid gap-5 rounded-xl border p-5 grid-cols-[1fr_1fr] md:w-1/2 w-full mx-auto ">
+            <section id="contact" class="h-full py-12 hide">
+                <h1 class="text-2xl font-bold font-[Oswald]">Contact</h1>
+                <p>Contact for more information</p>
+                <div class="p-4 flex">
+                    <form action="" class="grid text-black gap-5 rounded-xl border p-5 grid-cols-[1fr_1fr] md:w-1/2 w-full mx-auto ">
                         <input class="rounded-full px-3 py-2 w-full" type="text" placeholder="First name">
                         <input class="rounded-full px-3 py-2 w-full" type="text" placeholder="Last name">
                         <input class="col-span-2 rounded-full px-3 py-2 w-full" type="email" placeholder="Your email">
                         <textarea class="col-span-2 rounded px-3 py-2 w-full" rows="8" placeholder="Your message"></textarea>
-
-                        <button class="px-5 col-span-2 py-2 border rounded-xl flex mx-auto w-full justify-center">Send</button>
+                        <button class="px-5 col-span-2 text-white py-2 border rounded-xl flex mx-auto w-full justify-center">Send</button>
                     </form>
+
+                    <address class="flex flex-col gap-2">
+                        <div class="flex gap-x-2 items-center">
+                            <i class="fa-solid fa-location-dot text-sm border p-2 rounded"></i>
+                            <div>
+                                <h1>Location</h1>
+                                <p>Santa Maria, Laguna, Philippines</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-2 items-center">
+                            <i class="fa-solid fa-phone text-sm border p-2 rounded"></i>
+                            <div>
+                                <h1>Phone</h1>
+                                <p>09919499847</p>
+                            </div>
+                        </div>
+                    </address>
                 </div>
             </section>
         </div>
